@@ -9,6 +9,29 @@
 </head>
 <body>
 
+    <style>
+
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+        z-index: 120!important;
+        }
+
+        .mobile-promo {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .mobile-promo {
+            display: block;
+        }
+
+
+}
+    </style>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 
 <!--SECTION 1 DESKTOP-->
@@ -38,8 +61,11 @@
 <div id="measure">
 <div class="zmags-viewer-container" data-group="612679b7ad04232fc464f958" data-company="602165a6faf7ea1f931775f2" data-speed="1"></div>
 </div>
+
 <!--MOBILE NAVIGATION -->
-<div class="zmags-viewer-container" data-experience="6127ae59a3dd511b8c710cfa" data-company="602165a6faf7ea1f931775f2" data-speed="1"></div>
+<div class="mobile-promo sticky">
+    <div class="zmags-viewer-container" data-experience="6127ae59a3dd511b8c710cfa" data-company="602165a6faf7ea1f931775f2" data-speed="1"></div>
+</div>
 
 
 <script defer type="text/javascript"  src="//c.zmags.com/static/wrapper.js"></script>
