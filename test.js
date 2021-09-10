@@ -50,3 +50,30 @@ navScenes();
 toggleContainer();
 
 
+
+
+
+
+//////////////////
+
+
+
+
+var x = document.getElementById("#{TOGGLE_ID_1}");
+var y = document.getElementById("#{TOGGLE_ID_2}");
+ 
+function toggleContainer() {
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+    document.querySelectorAll('.zmags-viewer-container[data-experience="6127ae59a3dd511b8c710cfa"] * > .scene-overlay > .widget-component.link-widget')[0].click();
+};
+ 
+
+toggleContainer();
+
+
